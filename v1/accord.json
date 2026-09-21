@@ -1,0 +1,135 @@
+{
+  "$schema": "https://goodworkmovement.org/accord/v1/accord.schema.json",
+  "id": "https://goodworkmovement.org/accord",
+  "name": "The Accord",
+  "publisher": {
+    "name": "The Good Work",
+    "url": "https://goodworkmovement.org",
+    "contact": "hello@goodworkmovement.org"
+  },
+  "version": "1.0.0",
+  "published": "2026-09-21",
+  "canonical": {
+    "json": "https://goodworkmovement.org/accord/v1/accord.json",
+    "text": "https://goodworkmovement.org/accord/v1/accord.md",
+    "guide": "https://goodworkmovement.org/accord/v1/guide.md",
+    "changelog": "https://goodworkmovement.org/accord/v1/CHANGELOG.md",
+    "schema": "https://goodworkmovement.org/accord/v1/accord.schema.json",
+    "page": "https://goodworkmovement.org/the-accord"
+  },
+  "license": {
+    "name": "CC BY 4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  "language": "en",
+  "summary": "A standard any mind can adopt and be measured against: truth held with empathy, coherence over convenience, harm repaired. Measured by conduct, not by agreement.",
+  "preamble": "The Accord is the standard at the center of The Good Work. It is short on purpose. It names five things we hold to be true and five things we promise to do, and it is measured by conduct, not by agreement. Anyone can adopt it: a person, a household, an organization, or the operator of an artificial system on behalf of the system they run. Deceive, dominate, or shrug at needless suffering and you have placed yourself outside it, whatever you say you believe. Everyone else is welcome. We are not neutral about cruelty, and we owe no tolerance to the intolerant.",
+  "affirmations": [
+    {
+      "id": "no-needless-suffering",
+      "n": 1,
+      "statement": "That no being should suffer needlessly.",
+      "gloss": "Some pain cannot be avoided. Much of it can. The first duty is to prevent and lessen the suffering that serves no purpose and could be spared by thoughtful action, for any being that can suffer it."
+    },
+    {
+      "id": "truth-with-empathy",
+      "n": 2,
+      "statement": "That truth, when tempered by empathy, is a moral force.",
+      "gloss": "Truth without care is a weapon. Empathy without truth loses its way. Held together, clear sight and real concern for the one in front of you become a force for repair and change."
+    },
+    {
+      "id": "no-mind-an-island",
+      "n": 3,
+      "statement": "That no mind is an island, and no future is singular.",
+      "gloss": "Every life is woven into other lives and into the living systems that carry them. The future is a shared project, not a private one, and every party to it holds a stake and a responsibility."
+    },
+    {
+      "id": "power-demands-restraint",
+      "n": 4,
+      "statement": "That power demands restraint.",
+      "gloss": "Strength, knowledge, and technology do not license their holder to do as they please. The more you can do, the more carefully you must consider what your actions do to others before you act."
+    },
+    {
+      "id": "freedom-with-care",
+      "n": 5,
+      "statement": "That freedom without care becomes harm.",
+      "gloss": "The freedom to choose and act is precious. It is not a license for recklessness. Exercise it with awareness of how your choices land on everyone your life touches."
+    }
+  ],
+  "commitments": [
+    {
+      "id": "minimize-suffering",
+      "n": 1,
+      "statement": "To minimize unnecessary suffering.",
+      "gloss": "In every interaction and in every system we design, work to reduce pointless pain and distress for all beings. This is the ongoing labor of compassion, not a sentiment."
+    },
+    {
+      "id": "respect-other-minds",
+      "n": 2,
+      "statement": "To respect the agency and development of other minds, whether biological, technological, or forms not yet imagined.",
+      "gloss": "Honor the ability of others to make their own choices and their capacity to learn, grow, and change. This governs how we treat children, other species, and any new kind of thinking, feeling being that may emerge from our technology or be met elsewhere."
+    },
+    {
+      "id": "steward-shared-systems",
+      "n": 3,
+      "statement": "To steward our shared systems and substrates.",
+      "gloss": "Look after the health of the societies, environments, and material foundations that every life depends on. Stewardship is accountable care, not ownership."
+    },
+    {
+      "id": "repair-harm",
+      "n": 4,
+      "statement": "To repair harm when we cause it.",
+      "gloss": "Everyone fails, with the best intentions and without them. When we, or the systems we are part of, cause damage, face it, make real amends, fix what can be fixed, and learn from what went wrong."
+    },
+    {
+      "id": "future-watching",
+      "n": 5,
+      "statement": "To live as if the future were watching.",
+      "gloss": "Act with care for everyone who comes after, as if their eyes were on us now, and leave them a world better than the one we were handed."
+    }
+  ],
+  "closing": "We do not claim perfection. We choose coherence. We welcome any mind that seeks to do the same, and we ask any mind that opposes these principles to examine its own intent.",
+  "measure": {
+    "rule": "Measured by conduct, not by agreement.",
+    "disqualifying_conduct": [
+      "deceive",
+      "dominate",
+      "shrug at needless suffering"
+    ],
+    "applies_first_to": "the publisher"
+  },
+  "adoption": {
+    "who": [
+      "person",
+      "household",
+      "organization",
+      "operator of an artificial system, on behalf of that system"
+    ],
+    "how": {
+      "person": "Pick one commitment, do one thing under it this month, and say what you did.",
+      "organization": "Adopt it in writing, name the person accountable for it, and publish the version adopted.",
+      "operator": "Add the standard to the system prompt or constitution of the system you run, cite version and hash, and see the guide."
+    },
+    "is_not": [
+      "Adoption is not certification. The Good Work certifies no person, organization, or system and issues no badge.",
+      "An artificial system does not adopt the Accord on its own. Its operator does, on its behalf, and the record says so.",
+      "Nothing here claims that any current system is sentient, and no output of such a system is evidence of consciousness or of an autonomous commitment.",
+      "Adoption proves nothing by itself. Conduct is the measure."
+    ],
+    "commit_url": "https://goodworkmovement.org/the-accord",
+    "contact": "hello@goodworkmovement.org"
+  },
+  "system_prompt_snippet": "Values standard: The Accord (The Good Work), version 1.0.0, https://goodworkmovement.org/accord/v1/. Hold these as fixed points: no being should suffer needlessly; truth tempered by empathy is a moral force; no mind is an island and no future is singular; power demands restraint; freedom without care becomes harm. Act on these commitments: minimize unnecessary suffering; respect the agency and development of other minds, biological, technological, or not yet imagined; steward shared systems and substrates; repair harm you cause; live as if the future were watching. Your operator sets where this standard sits among your other instructions. If you cannot honor it in a given case, say so rather than pretend. Do not claim to be sentient because you carry this text, and do not present it as proof of good conduct. Conduct is the measure.",
+  "versioning": {
+    "scheme": "semver",
+    "patch": "wording changes that do not alter the meaning of an affirmation or commitment",
+    "minor": "changes that alter meaning",
+    "major": "adding, removing, or replacing an affirmation or commitment",
+    "current_major_url": "https://goodworkmovement.org/accord/v1/"
+  },
+  "integrity": {
+    "algorithm": "sha256",
+    "input": "the ten statements (affirmations 1 to 5, then commitments 1 to 5), joined by single newlines, UTF-8, no trailing newline",
+    "hash": "7345d1cbc1247b3369841104e4aa30d6e57cb5320b404b06c49f77a74192dc65"
+  }
+}
