@@ -1,11 +1,11 @@
 # The Accord
 
-Version 1.0.1. Published 23 September 2026 by The Good Work.
+Version 1.0.0. Published 21 September 2026 by The Good Work.
 Canonical text: https://goodworkmovement.org/accord/v1/accord.md
 Machine-readable: https://goodworkmovement.org/accord/v1/accord.json
 License: Creative Commons Attribution 4.0 International (CC BY 4.0).
 
-The Accord is the standard at the center of The Good Work. It is short on purpose. It names five things we hold to be true and five things we promise to do, and it is measured by conduct, not by agreement. Anyone can keep it: a person, a household, an organization, or the operator of an artificial system on behalf of the system they run. Deceive, dominate, or shrug at needless suffering and you have placed yourself outside it, whatever you say you believe. Disagreeing is a conversation. Cruelty is a line. Everyone who keeps it is welcome.
+The Accord is the standard at the center of The Good Work. It is short on purpose. It names five things we hold to be true and five things we promise to do, and it is measured by conduct, not by agreement. Anyone can adopt it: a person, a household, an organization, or the operator of an artificial system on behalf of the system they run. Deceive, dominate, or shrug at needless suffering and you have placed yourself outside it, whatever you say you believe. Everyone else is welcome. We are not neutral about cruelty, and we owe no tolerance to the intolerant.
 
 ## We affirm
 

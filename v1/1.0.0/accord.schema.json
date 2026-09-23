@@ -1,0 +1,107 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://goodworkmovement.org/accord/v1/accord.schema.json",
+  "title": "The Accord (machine-readable values standard)",
+  "description": "Schema for accord.json, the versioned, machine-readable text of The Accord published by The Good Work. A document that validates against this schema carries the five affirmations, five commitments, adoption rules, a copy-and-paste system prompt snippet, and an integrity hash of the ten statements.",
+  "type": "object",
+  "required": ["id", "name", "publisher", "version", "published", "canonical", "license", "language", "preamble", "affirmations", "commitments", "closing", "measure", "adoption", "system_prompt_snippet", "versioning", "integrity"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {"type": "string", "format": "uri"},
+    "id": {"type": "string", "format": "uri", "description": "Stable identifier for the standard across versions."},
+    "name": {"type": "string"},
+    "publisher": {
+      "type": "object",
+      "required": ["name", "url"],
+      "properties": {
+        "name": {"type": "string"},
+        "url": {"type": "string", "format": "uri"},
+        "contact": {"type": "string"}
+      }
+    },
+    "version": {"type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$", "description": "Semantic version of this text."},
+    "published": {"type": "string", "format": "date"},
+    "canonical": {
+      "type": "object",
+      "required": ["json", "text"],
+      "properties": {
+        "json": {"type": "string", "format": "uri"},
+        "text": {"type": "string", "format": "uri"},
+        "guide": {"type": "string", "format": "uri"},
+        "changelog": {"type": "string", "format": "uri"},
+        "schema": {"type": "string", "format": "uri"},
+        "page": {"type": "string", "format": "uri"}
+      }
+    },
+    "license": {
+      "type": "object",
+      "required": ["name", "url"],
+      "properties": {"name": {"type": "string"}, "url": {"type": "string", "format": "uri"}}
+    },
+    "language": {"type": "string", "description": "BCP 47 language tag of the text."},
+    "summary": {"type": "string"},
+    "preamble": {"type": "string"},
+    "affirmations": {"$ref": "#/$defs/fiveStatements"},
+    "commitments": {"$ref": "#/$defs/fiveStatements"},
+    "closing": {"type": "string"},
+    "measure": {
+      "type": "object",
+      "required": ["rule", "disqualifying_conduct"],
+      "properties": {
+        "rule": {"type": "string"},
+        "disqualifying_conduct": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+        "applies_first_to": {"type": "string"}
+      }
+    },
+    "adoption": {
+      "type": "object",
+      "required": ["who", "how", "is_not"],
+      "properties": {
+        "who": {"type": "array", "items": {"type": "string"}},
+        "how": {"type": "object", "additionalProperties": {"type": "string"}},
+        "is_not": {"type": "array", "items": {"type": "string"}},
+        "commit_url": {"type": "string", "format": "uri"},
+        "contact": {"type": "string"}
+      }
+    },
+    "system_prompt_snippet": {"type": "string", "description": "Short form for operators to paste into a system prompt or constitution. Cites version and canonical URL."},
+    "versioning": {
+      "type": "object",
+      "required": ["scheme"],
+      "properties": {
+        "scheme": {"type": "string", "const": "semver"},
+        "patch": {"type": "string"},
+        "minor": {"type": "string"},
+        "major": {"type": "string"},
+        "current_major_url": {"type": "string", "format": "uri"}
+      }
+    },
+    "integrity": {
+      "type": "object",
+      "required": ["algorithm", "input", "hash"],
+      "properties": {
+        "algorithm": {"type": "string", "const": "sha256"},
+        "input": {"type": "string"},
+        "hash": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+      }
+    }
+  },
+  "$defs": {
+    "fiveStatements": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "n", "statement", "gloss"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[a-z0-9-]+$"},
+          "n": {"type": "integer", "minimum": 1, "maximum": 5},
+          "statement": {"type": "string"},
+          "gloss": {"type": "string"}
+        }
+      }
+    }
+  }
+}

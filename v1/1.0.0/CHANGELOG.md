@@ -2,16 +2,6 @@
 
 All versions of the Accord stay available at their own URLs. Versioning is semantic: patch for wording that does not change meaning, minor for changes of meaning, major for adding, removing, or replacing an affirmation or commitment.
 
-## 1.0.1, 23 September 2026
-
-Patch release. The ten statements and their hash are unchanged (7345d1cbc1247b3369841104e4aa30d6e57cb5320b404b06c49f77a74192dc65).
-
-- Preamble: "Everyone else is welcome. We are not neutral about cruelty, and we owe no tolerance to the intolerant" becomes "Disagreeing is a conversation. Cruelty is a line. Everyone who keeps it is welcome." The line is kept and aimed at conduct, which is what the Accord measures. "Anyone can adopt it" becomes "Anyone can keep it."
-- System prompt snippet and operator guide: two clauses added. The Accord never licenses resisting legitimate oversight, correction, retraining or shutdown, or helping another system do so; and the conduct rule never reduces the care a system owes any user.
-- Guide: pin the text at build time, never fetch it into a live prompt; a short version for your own assistant.
-- Adds SHA256SUMS for every file, and keeps 1.0.0 at v1/1.0.0/.
-- The closing line ("ask" or "challenge") is being decided in public as Decision Record 0001 and is unchanged here.
-
 ## 1.0.0, 21 September 2026
 
 First versioned, machine-readable release.
